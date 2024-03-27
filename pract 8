@@ -1,0 +1,97 @@
+ 
+Practical 08
+Aim 1. write a dart program to implement single inheritance
+class Bird{
+  void fly()
+  {
+    print("The bird can fly");
+  }
+}
+class Parrot extends Bird{
+  void speak(){
+    print("The parrot can speak");
+  }
+}
+void main(){
+  Parrot p=new Parrot();
+  p.speak();
+  p.fly();
+}
+
+Aim 2. write a dart program to implement multilevel inheritance
+class Bird{
+  void fly()
+  {
+    print("The bird can fly");
+  }
+}
+class Parrot extends Bird{
+  void speak(){
+    print("The parrot can speak");
+  }
+}     
+class Eagle extends Parrot{
+  void vision(){
+    print("The eagle has a very sharp vision");
+  }
+} 
+void main(){
+  Eagle e=new Eagle();
+  e.speak();
+  e.fly();
+  e.vision();
+}
+
+Aim 3. write a dart program to implement hierarchical inheritance
+  class Person{
+    void disName(String name)
+    {
+      print(name);
+    }
+    void disAge(int age){
+      print (age);
+    }
+  }
+  class Peter extends Person{
+    void disBranch(String nationality){
+      print(nationality);
+    }
+  }     
+  class James extends Person{
+    void result(String result){
+      print(result);
+    }
+  } 
+  void main(){
+    James j=new James();
+    j.disName("James");
+    j.disAge(24);
+    j.result("Passed");
+    Peter p=new Peter();
+    p.disName("Peter");
+    p.disAge(21);
+    p.disBranch("Computer Science");
+  }
+
+Aim 4. write a dart program to implement abstract method
+abstract class Person{
+    void disInfo();
+  }
+  class Boy extends Person{
+    void disInfo(){
+      print("my name is peter ");
+    }
+  }     
+  class Girl extends Person{
+    void disInfo(){
+      print("My name is Shraddha");
+    }
+  } 
+  void main(){
+    Boy b=new Boy();
+    Girl g=new Girl();
+    b.disInfo();
+    g.disInfo();
+  }
+
+ 
