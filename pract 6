@@ -1,19 +1,18 @@
-1)Aim: Write a program to create and implement modules and controllers in AngularJs.
+1)Aim: Create a simple “Hello World” project using AngularJS and apply ng-controller etc.
 Code:
 <!doctype html>
-<html>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<html ng-app="app">
+    <head>
+        <title>Hello World Project</title>
+    </head>
     <body>
-        <div ng-app="myApp" ng-controller="myCtrl">
-            {{firstName + " " + lastName}}      
-            </div>
-            
-            <script>
-                var app = angular.module("myApp",[]);
-                app.controller("myCtrl",function($scope){
-                    $scope.firstName="John";
-                    $scope.lastName="Doe";
-                });
-            </script>
+        <h1 ng-controller="HelloWorldCtrl">{{message}}</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+        </script>
+        <script>
+            angular.module("app",[]).controller("HelloWorldCtrl",function($scope){
+                $scope.message="Hello World"
+            })
+        </script>
     </body>
 </html>
