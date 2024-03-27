@@ -1,0 +1,141 @@
+Aim1. Print hello world with void main
+void main(){
+   print("main is the entry point!");
+   print("hello world");
+ }
+output:
+
+Aim2. write a dart program to make the use of comment
+ int main(){
+   var lst=[1,2,3];
+   //single line comment
+   /*
+    * it prints
+    * the whole list
+    * at once
+     */
+   print(lst);
+   return 0;
+ }
+output:
+
+
+
+Aim 3. write a dart program to documentation comment (triple line comment) 
+ int main(){
+   var lst=[1,2,3];
+       /// it print the whole list
+    /// at once
+   print(lst);
+   return 0;
+ }
+Aim 4. write a dart program to create a variable and display it
+void main() {
+   var a=12;
+  const pi=3.14;
+  print(a);
+   print(pi); 
+}
+output:
+
+Aim 5. Datatypes in dart
+void main() {
+   int num1=2;
+  double num2=1.5;
+  print (num1);
+  print(num2);
+  var a1=num.parse("1");
+  var b1=num.parse("2.34");
+  var c1=a1+b1;
+  print("Product = ${c1}");
+}
+output:
+
+Aim 6. write a dart program to create a list and display it
+void main() {
+  var list=[1,2,3,4];
+  print(list);
+}
+output:
+
+Aim 7. WAP to create mapping and display
+void main() {
+  var mapping={"id":37,'name':'shraddha'};
+  print(mapping);
+}
+output:
+
+Aim 8. write a dart program to print even no. with for loop(range between 1-10)
+void main() {
+  for (int i = 1;i<=10;i++){
+    if(i%2==0){
+      print(i);
+    }
+  }
+  }
+Output:
+
+Aim 9:WAP to add two variables using function
+void main() {
+  add(3,4);
+}
+void add(int a,int b){
+  int c;
+  c=a+b;
+  print(c);
+  }
+Output:
+●	
+Aim 10. write a dart program to demonstrate assignment operator
+void main() {
+  // Assignment operators
+  double a = 5;
+  double b = 3;
+
+  // = (Assignment)
+  double result = a + b;
+  print("Result after '=' operator: $result");
+
+  // += (Add and assign)
+  result += 2;
+  print("Result after '+=' operator: $result");
+
+  // -= (Subtract and assign)
+  result -= 1;
+  print("Result after '-=' operator: $result");
+
+  // *= (Multiply and assign)
+  result *= 3;
+  print("Result after '*=' operator: $result");
+
+  // /= (Divide and assign)
+  result /= 2;
+  print("Result after '/=' operator: $result");
+
+  // %= (Remainder and assign)
+  result %= 4;
+  print("Result after '%=' operator: $result");
+}
+
+Aim 11. Write a dart program to implement getter and setter.
+code:
+class Employee{
+  String name="";
+  String get emp_name{
+    return name;
+  }
+  void set emp_name(String name){
+    this.name=name;
+  }
+  void result(){
+    print(name);
+  }
+}
+void main(){
+  Employee emp=new Employee();
+  emp.name="priyanka";
+  emp.result();
+}
+
+Output:
+
