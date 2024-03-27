@@ -1,0 +1,20 @@
+Aim: Write a program to implement MongoDB data models.
+Q1. Create a database named as empdb with collection name emp.
+1)	Embedded data model:
+Code:
+use empdb
+db.createCollection("emp")
+db.emp.insert({
+  name: "Aniket",
+  age: 20,
+  email: "aniket2004@gmail.com",
+  detail: [{contact:1234567890, familyMember: "five"},{contact:0987456123,familyMember:"Three"}]
+})
+2)	Normalized data model:
+Code:
+db.emp.insert({
+  name: "Aniket",
+  age: 20,
+  website: "empCompany.com"
+})
+db.emp.find()
