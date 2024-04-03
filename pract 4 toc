@@ -1,0 +1,16 @@
+Aim: design a program for accepting decimal number divisible by 2.
+Code:
+import java.util.Scanner;
+
+public class DiviSor {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter number: ");
+        int num = in.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println("Divisible by 2");
+        else
+            System.out.println("Not divisible by 2");
+    }
+}
