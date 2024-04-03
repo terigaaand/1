@@ -1,0 +1,22 @@
+Aim: Working with Regular Expressions.
+1)re.findall()
+\d  Matches any decimal digit; this is equivalent to the class[0-9].
++1  or more occurrences of the pattern to its left
+Code:
+import re
+string ="hello 09 hii 30.Howdy 34"
+pattern='\d+'
+result=re.findall(pattern, string)
+print(result)
+
+Output:
+
+
+2)re.split()
+Code:
+import re
+string ="Twelve:12 Eighty nine:89"
+pattern='\d+'
+result=re.split(pattern, string)
+print(result)
+
