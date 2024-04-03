@@ -1,0 +1,17 @@
+Aim: Write a program to perform tokenization of given input.
+CODE:
+import nltk
+nltk.download()
+sentence_data="You're braver than you believe. You must be the change you wish to see in the world"
+nltk_tokens=nltk.sent_tokenize(sentence_data)
+print(nltk_tokens)
+Output:
+
+
+Word tokenization:
+Code:
+import nltk
+nltk.download()
+sentence_data="You're braver than you believe. You must be the change you wish to see in the world"
+nltk_tokens=nltk.word_tokenize(sentence_data)
+print(nltk_tokens)
