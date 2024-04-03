@@ -1,0 +1,40 @@
+Aim: Working with Regular Expressions.
+1)re.findall()
+\d  Matches any decimal digit; this is equivalent to the class[0-9].
++1  or more occurrences of the pattern to its left
+Code:
+import re
+string ="hello 09 hii 30.Howdy 34"
+pattern='\d+'
+result=re.findall(pattern, string)
+print(result)
+
+2)re.split()
+Code:
+import re
+string ="Twelve:12 Eighty nine:89"
+pattern='\d+'
+result=re.split(pattern, string)
+print(result)
+
+3)re.sub()
+The method returns a string where matched occurrences are replaced with the code variable.
+\s  Matches any whitespace character.
+Code:
+import re
+string='abc 12\de 23\n f45 6'
+pattern='\s+'
+replace=""
+new_string=re.sub(pattern, replace, string)
+print(new_string)
+
+4)re.search()
+If the search is successful, re.search() returns a match object; if not, it returns None.
+Code:
+import re
+string="Python is fun"
+match=re.search('\APython', string)
+if match:
+    print("pattern found inside the string")
+else:
+    print("pattern not found")
