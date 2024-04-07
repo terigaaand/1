@@ -1,0 +1,39 @@
+a.] ipconfig
+Displays all current TCP/IP network configuration values. and refreshes Dynamic Host Configuration
+Protocal CDHCP) and Domain Name System (DNS) settings. Used without parameters, ipconfig displays
+internd protocol version 4 (IPV4) and IPv6 addresses, subnet mask, and default gateway for all adapters. b.] ipconfig/all
+Displays the full TCP/IP configuration for all adapter... Adapters can represent physical interfaces, such
+as installed network adapters, or logical interfaces such as dial-up connections. c.] getmac
+Returns the media acess control (MAC) address and list of network protocols associated with each
+address you all. network cards in each computer, either locally or across. a network. d.] ping youtube.com ping 192.168.21.104
+Ping is very universal command between all the operating systems. It can be use to test if you can. reach
+your target and how much time it will take. to do it Ping sends Internet Control Mossage Protocal (ICMP)
+packets to the destination. Then it waits for- the echo reply. e.] netstat
+The netstat command displays the contents of various network-related data structures for active
+connections. It displays the status of TCP and UDP and points in table format, routing table information, and interace information. g.] tracert google.com tracert amazon.com
+
+https://study.cscornersunitarai.com/
+
+The tracert command is a command Prompt that's used to show several details about the path. that a
+packet takes from the computer on device you're on to Lowhatever destination you specify
+h.] pathping youtube.com
+It provides information about network latency and network loss at intermediate hops between a source
+and destination This command sends multiple echa Request massages to each router between source
+and destination, over a period of time, and then computes result based on packets returned from each
+router
+
+i.] nslookup youtube.com
+The nslookup command queries internet domain rame servers in two modes. Interictive mode allows
+you to query name servers for information about various hosts and domains, or to print a list of the host
+in a domain. In noniteractive mode, the names and requested information are printed your specified
+host or demain.
+
+j.] arp -a
+The arp command displays and modifies the Internet- to-adapter address translation tables used by the
+Address in Networks and communication management. The arp command displays the current ARP
+entry for the host specified by hostname variable. arp-a displays the mac addresses of recently resolved ip addresses. k.] arp -d
+This command is used when you want to delete fane entry from ARP table for particular interface.
+
+l.] arp -a -v
+Displays current entries in verbose mode. All invalid enteries and entries on look-back interface will be
+shown.
