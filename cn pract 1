@@ -1,0 +1,11 @@
+a.] ipconfig
+b.] ipconfig/all 
+c.] getmac 
+d.] ping youtube.com ping 192.168.21.104 
+e.] netstat 
+g.] tracert google.com tracert amazon.com
+h.] pathping youtube.com 
+i.] nslookup youtube.com 
+j.] arp -a 
+k.] arp -d 
+l.] arp -a -v 
